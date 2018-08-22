@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+
+
+<!--  Bootstrap -->
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+ 
+</head>
+<body>
+
+<!-- Navbar -->
+<nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <a class="navbar-brand" routerLink="/about" routerLinkActive="active">Portfolio</a>
+    </div>
+    <ul class="nav navbar-nav">
+      <li><a routerLink="/skills" routerLinkActive="active">SKILLS</a></li>
+      <li><a routerLink="/work" routerLinkActive="active">WORK</a></li>
+      <li><a routerLink="/acads" routerLinkActive="active">ACADEMICS</a></li>
+      <li><a routerLink="/projects" routerLinkActive="active">PROJECTS</a></li>
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a routerLink="/connect" routerLinkActive="connect"><span class="glyphicon glyphicon-earphone"></span> CONTACT</a></li>
+    </ul>
+  </div>
+</nav>
+
+
+<router-outlet></router-outlet>
+
+</body>
+</html>

@@ -1,0 +1,30 @@
+<div class="rows">
+  <div class="col-lg-6">
+    <div class="jumbotron">
+      <p>I have completed my Mater's in Computer Science from George Mason University.</p> 
+      <p>I am interested in starting my career as a Software Engineer/ Web Developer.</p>
+      <p>I would like to work in an organization which will provide me an opportunity to apply the breadth of my knowledge practically, as well as progress in this field.</p>
+      <p>I am open to full-time opportunities and internships.</p>
+    </div>
+ </div>
+ <div class="col-lg-6">  
+   <h3>Select and Modify your desired Skill Set </h3>
+  <ul class="selectSkill list-group">
+    <li class="list-group-item list-group-item-success py-0" *ngFor="let s of selectSkill" (click)="onSelect(s)">     
+      <h4>{{s.name}}</h4>
+    </li>
+  </ul>
+  <div *ngIf="selectedSkill">
+    <label>Desired Skill Set
+      <input [(ngModel)]="selectedSkill.name">
+    </label>
+  </div>
+        
+         
+          
+      
+ </div>
+</div>
+
+<div class="container">
+</div>

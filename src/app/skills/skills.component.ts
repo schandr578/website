@@ -1,6 +1,9 @@
 import { Component, OnInit } from '@angular/core';
 import { SkillSet } from './skillSet'
 import { skilled} from './skillSetArray';
+import { SkillService } from './service/skill.service';
+
+
 @Component({
   selector: 'app-skills',
   templateUrl: './skills.component.html',
@@ -8,16 +11,15 @@ import { skilled} from './skillSetArray';
 })
 export class SkillsComponent{
   
-  selectSkill = skilled;
-
-  selectedSkill:SkillSet;
-
-  constructor() { 
+  public selectSkill: SkillSet[];
 
 
+  constructor(private _skillService: SkillService) { 
   }
-  onSelect(s: SkillSet): void {
-    this.selectedSkill = s;
+  
+  ngOnInit()
+  {
+    this.selectSkill = this._skillService.getSkillSet();
   }
 
 

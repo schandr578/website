@@ -1,30 +1,50 @@
 <div class="rows">
   <div class="col-lg-6">
-    <div class="jumbotron">
-      <p>I have completed my Mater's in Computer Science from George Mason University.</p> 
-      <p>I am interested in starting my career as a Software Engineer/ Web Developer.</p>
-      <p>I would like to work in an organization which will provide me an opportunity to apply the breadth of my knowledge practically, as well as progress in this field.</p>
-      <p>I am open to full-time opportunities and internships.</p>
-    </div>
+    <h3>Relevant Course Work</h3>
+    <ul class="selectSkill list-group">
+      <li class="list-group-item list-group-item-success py-0" *ngFor="let s of selectSkill">     
+        <h4>{{s.name}}</h4>
+      </li>
+    </ul>
  </div>
- <div class="col-lg-6">  
-   <h3>Select and Modify your desired Skill Set </h3>
-  <ul class="selectSkill list-group">
-    <li class="list-group-item list-group-item-success py-0" *ngFor="let s of selectSkill" (click)="onSelect(s)">     
-      <h4>{{s.name}}</h4>
-    </li>
-  </ul>
-  <div *ngIf="selectedSkill">
-    <label>Desired Skill Set
-      <input [(ngModel)]="selectedSkill.name">
-    </label>
-  </div>
-        
-         
-          
-      
+ <div class="col-lg-6"> 
+      <h1 ><span class="label label-default">Java</span></h1>
+      <h1 id = "skillStyles"><span class="label label-primary">Angular 6</span></h1>
+      <h1 style="display:inline"><span class="label label-success">Node.js</span></h1>  
+      <p></p> 
+      <h1 id = "skillStyles"><span class="label label-warning ">JIRA</span></h1>
+      <h1 style="display:inline"><span class="label label-default">Localytics</span></h1>
+      <p></p>      
+      <h1 id = "skillStyles"><span class="label label-info ">JavaScript</span></h1>
+      <h1 id="skillStyles"><span class="label label-warning">JQuery</span></h1>
+      <p></p>
+      <h1 id = "skillStyles"><span class="label label-danger">HTML</span></h1>
+      <h1 id = "skillStyles"><span class="label label-default">CSS</span></h1>
+      <h1 style="display:inline"><span class="label label-primary">Bootstrap</span></h1>
+      <p></p>
+      <h1 id = "skillStyles"><span class="label label-success">AJAX</span></h1>
+      <h1 id = "skillStyles"><span class="label label-warning">REST</span></h1>
+      <p></p>
+      <h1 id = "skillStyles"><span class="label label-danger">Servlets & JSP</span></h1>
+      <p></p>
+      <h1 id = "skillStyles"><span class="label label-info">Git</span></h1>
+      <h1 id = "skillStyles"><span class="label label-default">Amazon AWS</span></h1>
+      <p></p>
+      <h1 id = "skillStyles"><span class="label label-success">JSF</span></h1>  
+      <h1 id = "skillStyles"><span class="label label-warning">PrimeFaces</span></h1>  
+      <p></p>
+      <h1 id = "skillStyles"><span class="label label-danger">MySQL</span></h1>
+      <h1 id = "skillStyles"><span class="label label-primary">MongoDB</span></h1>
+      <h1 id = "skillStyles"><span class="label label-info">Oracle 10g</span></h1>
+      <p></p>
+      <h1 id = "skillStyles"><span class="label label-default">Rational Rose</span></h1>
+      <h1 id = "skillStyles"><span class="label label-success">Postman</span></h1>
+      <p></p>
+      <h1 id = "skillStyles"><span class="label label-warning">Tableau</span></h1>
+      <p></p>
+      <h1 id = "skillStyles"><span class="label label-danger">C</span></h1>
+      <h1 id = "skillStyles"><span class="label label-info">C++</span></h1>
+
  </div>
 </div>
 
-<div class="container">
-</div>

@@ -11,6 +11,16 @@
     background-color:transparent !important;
 }
 
+#alignText{
+  text-align: justify;
+}
+
+#skillStyles{
+  display: inline;
+  padding-right: 0.2em;
+
+}
+
 #images
 {
   padding-top: 150px;
@@ -31,6 +41,8 @@ h4:hover {
   color:black;
   font-size:250%;
 }
+
+
 
 
 .timeline {
